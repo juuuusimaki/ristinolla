@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ristinolla</title> <!-- Sivun nimi -->
+    <script src="RistinollaAI.js"></script> <!-- Käytettävä javascript-tiedosto -->
+</head>
+
+<body onload="init()"> <!-- Sivun ladattaessa ajettava funktio -->
+    <h1>Ristinolla</h1> <!-- Otsikko -->
+    <form name="frmTicTacToe"> <!-- Lomakkeen nimi -->
+        <!-- Lomakkeen sisältö. Pelin vuoroseurantaan käytettävä tekstilaatikko, pelin aloitusnappula sekä pistelaskuritekstilaatikot -->
+        <p><input type="text" id="txtVuoro" value="Aloita peli nappulasta ->" size="20" disabled></input> <button type="button" id="btnReset" value="Aloita uusi peli!" onclick="Reset(document.frmTicTacToe)">Aloita uusi peli!</button></p>
+        <p>Tietokoneen voitot: <input type="text" id="txtTvoitto" value="0" size="1" disabled></input> Pelaajan voitot: <input type="text" id="txtPvoitto" value="0" size="1" disabled></input> Tasapelit: <input type="text" id="txtEvoitto" value="0" size="1" disabled></input> </p>
+        <!--Pelialueena toimiva 3*3-ruudukko, jossa kuvia painamalla ajetaan pelaajan toiminnasta vastaava funktio -->
+        <img src="check.png" id="p0_0" width="228" height="228" onclick="Change(document.frmTicTacToe, this)">
+        <img src="check.png" id="p0_1" width="228" height="228" onclick="Change(document.frmTicTacToe, this)">
+        <img src="check.png" id="p0_2" width="228" height="228" onclick="Change(document.frmTicTacToe, this)">
+        <br><br>
+        <img src="check.png" id="p1_0" width="228" height="228" onclick="Change(document.frmTicTacToe, this)">
+        <img src="check.png" id="p1_1" width="228" height="228" onclick="Change(document.frmTicTacToe, this)">
+        <img src="check.png" id="p1_2" width="228" height="228" onclick="Change(document.frmTicTacToe, this)">
+        <br><br>
+        <img src="check.png" id="p2_0" width="228" height="228" onclick="Change(document.frmTicTacToe, this)">
+        <img src="check.png" id="p2_1" width="228" height="228" onclick="Change(document.frmTicTacToe, this)">
+        <img src="check.png" id="p2_2" width="228" height="228" onclick="Change(document.frmTicTacToe, this)">
+    </form>
+
+</body>
+
+</html>
