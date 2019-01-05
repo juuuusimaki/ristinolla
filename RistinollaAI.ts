@@ -1,5 +1,5 @@
 // Ristinolla tietokonetta vastaan 3*3-ruudukolla. Tietokone osaa automaattisesti valita pelattavan ruudun, tunnistaa voittomahdollisuudet sekä etsii viereisiä vapaita ruutuja.
-
+//12.12.2018 Juuso Uusimäki
 class GameState { // Luodaan luokka pelitilanteelle
 
     vuoro: number; // Kumman vuoro: Ruksi = 1, ympyrä = 2
